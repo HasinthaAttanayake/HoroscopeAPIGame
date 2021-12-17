@@ -36,7 +36,7 @@ if (response.ok):
     elif 'nov' in month:
         astro_sign = 'scorpio' if (day < 22) else 'sagittarius'
     else:
-        print("404: Error can't communicate with API")
+        print("Error 404: Can't communicate with API")
         raise SystemExit
 
 astro_url = [url for url in allURLs if url.__contains__(astro_sign.lower())][0]
